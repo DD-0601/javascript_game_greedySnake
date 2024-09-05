@@ -1,0 +1,51 @@
+:root {
+    --primary: #67595e;
+    --secondary: #a49393;
+    --dusty_rose: #eed6d3;
+    --rosewater: #e8b4b8;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#myCanvas {
+    border: 5px solid var(--dusty_rose);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 設定位置是以框框的左上角為基準點，所以要再做translate讓框框往左&往上移50%，讓基準點變成框框的中心點，框框才會在正中央 */
+    transform: translate(-50%, -50%);
+}
+
+#myScore {
+    margin-top: 1rem;
+}
+
+#myScore,
+#myHighestScore {
+    color: var(--dusty_rose);
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+#Start {
+    padding: 0.25rem 0.5rem;
+    background-color: var(--secondary);
+    font-size: 1.15rem;
+    display: block;
+    margin-top: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
